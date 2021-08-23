@@ -19,7 +19,6 @@ public class Golem extends Enemies
     }
 
     //Getters and Setters
-
     public Elements getElement()
     {
         return element;
@@ -29,6 +28,7 @@ public class Golem extends Enemies
     {
         this.element = element;
     }
+
     //toString
     public String toString()
     {

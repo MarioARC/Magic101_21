@@ -7,17 +7,34 @@ public class Wizard
     public Wizard(int magicStr)
     {
         this.magicStr = magicStr;
+        checkMagicStr();
     }
 
     //Getters and Setters
-    public int getMagicDmg()
+    public int getMagicStr()
     {
         return magicStr;
     }
 
-    public void setMagicDmg(int magicStr)
+    public void setMagicStr(int magicStr)
     {
         this.magicStr = magicStr;
+        checkMagicStr();
     }
 
+    //Brain Methods
+    public void checkMagicStr()
+    {
+        if(magicStr < 0)
+        {
+            magicStr = 0;
+        }
+    }
+
+    //toString
+    public String toString()
+    {
+        String output = "\nThis Wizard's magic strength is " + magicStr + ".";
+        return output;
+    }
 }

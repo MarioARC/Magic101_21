@@ -11,6 +11,10 @@ public class MagicDriver
         Golem henry = new Golem(false, Elements.ICE);
         Golem gaglahm = new Golem(false, Elements.MAGMA);
 
+        Wizard dani = new Wizard(5);
+
+        System.out.println(dani);
+
 //        System.out.println(kyle.toString());
 //        kyle.setNumClaws(7);
 //        System.out.println("Now Kyle has " + kyle.getNumClaws() + " claws.");

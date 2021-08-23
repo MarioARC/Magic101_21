@@ -23,6 +23,7 @@ public class Dragon extends Enemies
         checkWingLength();
     }
 
+    //Brain Methods
     public void checkWingLength()
     {
         if(wingLength < 1)
