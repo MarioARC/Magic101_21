@@ -27,7 +27,7 @@ public class Wizard
     {
         if(magicStr < 0)
         {
-            magicStr = 0;
+            setMagicStr(0);
         }
     }
 

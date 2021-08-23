@@ -8,7 +8,6 @@ public class Dragon extends Enemies
     {
         super(hasClaws);
         this.wingLength = wingLength;
-        checkWingLength();
     }
 
     //Getters and Setters
@@ -20,7 +19,6 @@ public class Dragon extends Enemies
     public void setWingLength(int wingLength)
     {
         this.wingLength = wingLength;
-        checkWingLength();
     }
 
     //Brain Methods
@@ -28,7 +26,7 @@ public class Dragon extends Enemies
     {
         if(wingLength < 1)
         {
-            wingLength = 1;
+            setWingLength(1);
         }
     }
 
