@@ -30,5 +30,7 @@ public class MagicDriver
             System.out.println(golemEnemies[i]);
         }
 
+        System.out.println(henry.yell());
+
     }
 }// end driver

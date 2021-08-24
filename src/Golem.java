@@ -29,6 +29,12 @@ public class Golem extends Enemies
         this.element = element;
     }
 
+    //Brain Methods
+    public String yell()
+    {
+        return "Bazinga";
+    }
+
     //toString
     public String toString()
     {
