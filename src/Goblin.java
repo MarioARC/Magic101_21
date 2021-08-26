@@ -33,6 +33,18 @@ public class Goblin extends Enemies
         }
     }
 
+    public boolean canBuild()
+    {
+        if(getNumClaws() >= 5)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
     //toString
     public String toString()
     {

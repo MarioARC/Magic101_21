@@ -14,6 +14,7 @@ public class MagicDriver
         Golem gaglahm = new Golem(false, Elements.MAGMA);
 
         Wizard dani = new Wizard(5);
+        Wizard karen = new Wizard(2);
 
         System.out.println(dani);
 
