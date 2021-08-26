@@ -7,7 +7,6 @@ public class Wizard
     public Wizard(int magicStr)
     {
         this.magicStr = magicStr;
-        checkMagicStr();
     }
 
     //Getters and Setters
@@ -19,7 +18,6 @@ public class Wizard
     public void setMagicStr(int magicStr)
     {
         this.magicStr = magicStr;
-        checkMagicStr();
     }
 
     //Brain Methods

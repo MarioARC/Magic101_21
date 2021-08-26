@@ -1,12 +1,14 @@
 public class MagicDriver
 {
+    private static int count;
+
     public static void main(String[] args)
     {
         Goblin kyle = new Goblin(true, 5);
         Goblin gerome = new Goblin(false, 0);
 
-        Dragon bob = new Dragon(true, 0);
-        Dragon apalala = new Dragon(false, 10);
+        Dragon bob = new Dragon(true, 0, false);
+        Dragon apalala = new Dragon(false, 10, true);
 
         Golem henry = new Golem(false, Elements.ICE);
         Golem gaglahm = new Golem(false, Elements.MAGMA);
@@ -19,18 +21,18 @@ public class MagicDriver
 //        kyle.setNumClaws(7);
 //        System.out.println("Now Kyle has " + kyle.getNumClaws() + " claws.");
 
-        Enemies[] goblinEnemies = {kyle, gerome};
-        Enemies[] dragonEnemies = {bob, apalala};
-        Enemies[] golemEnemies = {henry, gaglahm};
+//        Enemies[] goblinEnemies = {kyle, gerome};
+//        Enemies[] dragonEnemies = {bob, apalala};
+//        Enemies[] golemEnemies = {henry, gaglahm};
 
-        for(int i = 0; i < goblinEnemies.length; i++)
+        Enemies[] enemies = {kyle, gerome, bob, apalala, henry, gaglahm};
+
+        for(int i = 0; i < enemies.length; i++)
         {
-            System.out.println(goblinEnemies[i]);
-            System.out.println(dragonEnemies[i]);
-            System.out.println(golemEnemies[i]);
+            System.out.println(enemies[i]);
         }
 
-        System.out.println(henry.yell());
+        System.out.println("\n" + henry.yell());
 
     }
 }// end driver
