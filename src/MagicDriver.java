@@ -13,8 +13,8 @@ public class MagicDriver
         Golem henry = new Golem(false, Elements.ICE);
         Golem gaglahm = new Golem(false, Elements.MAGMA);
 
-        Wizard dani = new Wizard(5);
-        Wizard karen = new Wizard(2);
+        Wizard dani = new Wizard(5, 3);
+        Wizard karen = new Wizard(2, 10);
 
         System.out.println(dani);
 
@@ -27,12 +27,20 @@ public class MagicDriver
 //        Enemies[] golemEnemies = {henry, gaglahm};
 
         Enemies[] enemies = {kyle, gerome, bob, apalala, henry, gaglahm};
+        Wizard[] wizards = {dani, karen};
 
         for(int i = 0; i < enemies.length; i++)
         {
             System.out.println(enemies[i]);
+            count++;
+        }
+        for(int i = 0; i < wizards.length; i++)
+        {
+            System.out.println(wizards[i]);
+            count++;
         }
 
+        System.out.println("There are " + count + " entities.");
         System.out.println("\n" + henry.yell());
 
     }

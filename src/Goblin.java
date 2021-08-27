@@ -7,6 +7,7 @@ public class Goblin extends Enemies
     {
         super(hasClaws);
         this.numClaws = numClaws;
+        checkNumClaws();
     }
     //Getters and Setters
 
@@ -18,6 +19,7 @@ public class Goblin extends Enemies
     public void setNumClaws(int numClaws)
     {
         this.numClaws = numClaws;
+        checkNumClaws();
     }
 
     //Brain Methods
