@@ -16,8 +16,6 @@ public class MagicDriver
         Wizard dani = new Wizard(5, 3);
         Wizard karen = new Wizard(2, 10);
 
-        System.out.println(dani);
-
 //        System.out.println(kyle.toString());
 //        kyle.setNumClaws(7);
 //        System.out.println("Now Kyle has " + kyle.getNumClaws() + " claws.");
@@ -40,8 +38,9 @@ public class MagicDriver
             count++;
         }
 
-        System.out.println("There are " + count + " entities.");
-        System.out.println("\n" + henry.yell());
-
+        System.out.println("\nThere are " + count + " entities.");
+        System.out.println("\nHenry yells: " + henry.yell());
+        System.out.println("\nDani tries to cast a spell: " + dani.castSpell());
+        System.out.println("\nKaren tries to cast a spell: " + karen.castSpell());
     }
 }// end driver

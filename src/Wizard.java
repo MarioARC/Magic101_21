@@ -53,15 +53,15 @@ public class Wizard
         }
     }
 
-    public void castSpell()
+    public String castSpell()
     {
         if(magicPts >= 5)
         {
-            System.out.println("Casted spell");
+            return "Spell Casted";
         }
         else
         {
-            System.out.println("Not enough MP");
+            return "Not Enough MP";
         }
     }
 
